@@ -21,9 +21,11 @@ const App: React.FC = () => {
     <div className="App">
     <span className="heading"> 2-Do</span>
     <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd} /> 
-
+    {/* <TodoList/> */}
+    {todos.map((t) => (
+      <li>{t.todo}</li>
+    ))}
     </div>
   );
 }
-
 export default App;
